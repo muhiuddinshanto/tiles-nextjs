@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BiChevronLeft, BiEnvelope, BiDownload } from "react-icons/bi";
 
 
+
 const TilesDetails = async ({ params }) => {
     const { id } = await params;
 

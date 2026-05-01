@@ -1,4 +1,5 @@
 import ProductCard from "./ProductCard";
+import data from "@/../public/data.json";
 
 const ProductShowcase = async () => {
     
