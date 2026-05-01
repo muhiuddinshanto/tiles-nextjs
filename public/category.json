@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cat-1",
+    "name": "Ceramic",
+    "slug": "ceramic",
+    "description": "Durable and versatile ceramic tiles for floors and walls",
+    "image": "/images/categories/ceramic.jpg"
+  },
+  {
+    "id": "cat-2",
+    "name": "Marble",
+    "slug": "marble",
+    "description": "Elegant marble tiles for premium interior design",
+    "image": "/images/categories/marble.jpg"
+  },
+  {
+    "id": "cat-3",
+    "name": "Porcelain",
+    "slug": "porcelain",
+    "description": "High-density porcelain tiles with low water absorption",
+    "image": "/images/categories/porcelain.jpg"
+  },
+  {
+    "id": "cat-4",
+    "name": "Stone",
+    "slug": "stone",
+    "description": "Natural stone finish tiles for rustic look",
+    "image": "/images/categories/stone.jpg"
+  },
+  {
+    "id": "cat-5",
+    "name": "Granite",
+    "slug": "granite",
+    "description": "Strong and durable granite tiles for heavy use",
+    "image": "/images/categories/granite.jpg"
+  },
+  {
+    "id": "cat-6",
+    "name": "Decorative",
+    "slug": "decorative",
+    "description": "Stylish decorative tiles with unique patterns",
+    "image": "/images/categories/decorative.jpg"
+  }
+]

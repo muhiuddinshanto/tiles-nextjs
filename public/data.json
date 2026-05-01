@@ -1,0 +1,127 @@
+[
+  {
+    "id": "1",
+    "title": "Ceramic Blue Tile",
+    "shortDescription": "Blue glazed premium ceramic tile.",
+    "longDescription": "This premium ceramic tile features a smooth blue glaze finish that brings a calm and elegant atmosphere to any interior space. It is made from high-quality ceramic material, ensuring long-lasting durability and resistance to scratches and moisture. Perfect for both wall and floor applications in kitchens, bathrooms, and living areas. Its modern aesthetic blends well with contemporary and minimalist design styles.",
+    "image": "/images/tiles/tile_001.jpg",
+    "category": "ceramic",
+    "price": 45.99,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "2",
+    "title": "Marble White Tile",
+    "shortDescription": "Elegant white marble finish tile.",
+    "longDescription": "This elegant white marble tile is designed to replicate the natural beauty of real marble while offering enhanced durability and easier maintenance. It features a polished surface that reflects light beautifully, creating a luxurious feel in any room.",
+    "image": "/images/tiles/tile_002.jpg",
+    "category": "marble",
+    "price": 59.99,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Marble",
+    "inStock": true
+  },
+  {
+    "id": "3",
+    "title": "Wood Texture Tile",
+    "shortDescription": "Natural wood-look ceramic tile.",
+    "longDescription": "This wood texture ceramic tile mimics natural wood while offering durability and water resistance. Perfect for creating warm interior environments like living rooms and cafés.",
+    "image": "/images/tiles/tile_003.jpg",
+    "category": "ceramic",
+    "price": 39.99,
+    "currency": "USD",
+    "dimensions": "30x60 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "4",
+    "title": "Black Matte Tile",
+    "shortDescription": "Modern black matte premium tile.",
+    "longDescription": "A stylish black matte porcelain tile designed for luxury interiors. It is highly durable, modern and suitable for premium architectural designs.",
+    "image": "/images/tiles/tile_004.jpg",
+    "category": "porcelain",
+    "price": 49.99,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Porcelain",
+    "inStock": false
+  },
+
+  {
+    "id": "5",
+    "title": "Glossy Grey Tile",
+    "description": "Stylish glossy grey tile for floor and wall use",
+    "image": "/images/tiles/tile_005.jpg",
+    "category": "ceramic",
+    "price": 42.5,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "6",
+    "title": "Stone Finish Tile",
+    "description": "Rough stone texture tile for natural look interiors",
+    "image": "/images/tiles/tile_006.jpg",
+    "category": "stone",
+    "price": 65.0,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Stone",
+    "inStock": true
+  },
+  {
+    "id": "7",
+    "title": "Beige Sand Tile",
+    "description": "Soft beige sand color tile for calm interior design",
+    "image": "/images/tiles/tile_007.jpg",
+    "category": "ceramic",
+    "price": 38.99,
+    "currency": "USD",
+    "dimensions": "45x45 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "8",
+    "title": "Patterned Moroccan Tile",
+    "description": "Colorful Moroccan style decorative pattern tile",
+    "image": "/images/tiles/tile_008.jpg",
+    "category": "decorative",
+    "price": 55.75,
+    "currency": "USD",
+    "dimensions": "20x20 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "9",
+    "title": "Glossy White Tile",
+    "description": "Bright glossy white tile for modern clean look",
+    "image": "/images/tiles/tile_009.jpg",
+    "category": "porcelain",
+    "price": 47.0,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Porcelain",
+    "inStock": false
+  },
+  {
+    "id": "10",
+    "title": "Granite Dark Tile",
+    "description": "Durable dark granite finish tile for luxury flooring",
+    "image": "/images/tiles/tile_010.jpg",
+    "category": "granite",
+    "price": 70.99,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Granite",
+    "inStock": true
+  }
+]
