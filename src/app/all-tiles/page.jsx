@@ -1,11 +1,12 @@
 import ProductCard from "@/components/ProductCard";
 import { BiSearch } from "react-icons/bi";
 
+
 const AllTiles = async ({ searchParams }) => {
    
     const { query } = await searchParams;
 
-    const res = await fetch("http://localhost:3000/data.json", {
+    const res = await fetch("https://pixgen-mu-nine.vercel.app/data.json", {
         cache: "no-store",
     });
     let datas = await res.json();

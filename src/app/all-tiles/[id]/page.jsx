@@ -2,11 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiChevronLeft, BiEnvelope, BiDownload } from "react-icons/bi";
 
+
 const TilesDetails = async ({ params }) => {
     const { id } = await params;
 
-    // ডাটা ফেচিং
-    const res = await fetch("http://localhost:3000/data.json", { cache: 'no-store' });
+    
+    const res = await fetch("https://pixgen-mu-nine.vercel.app/data.json", { cache: 'no-store' });
     const datas = await res.json();
     const singleTile = datas.find((item) => item.id === id);
 
