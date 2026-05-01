@@ -42,7 +42,7 @@ const TilesDetails = async ({ params }) => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
                     
-                    {/* LEFT - IMAGE PORTION */}
+                    {/* LEFT - IMAGE  */}
                     <div className="col-span-12 lg:col-span-7">
                         <div className="relative aspect-square bg-zinc-100 rounded-2xl overflow-hidden border border-zinc-200">
                             <Image
@@ -52,14 +52,14 @@ const TilesDetails = async ({ params }) => {
                                 className="object-cover"
                                 priority
                             />
-                            {/* Stock Badge */}
+                            {/*  Badge */}
                             <div className={`absolute top-6 right-6 px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest ${inStock ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
                                 {inStock ? "Available" : "On Request"}
                             </div>
                         </div>
                     </div>
 
-                    {/* RIGHT - CONTENT PORTION */}
+                    {/* RIGHT - CONTENT  */}
                     <div className="col-span-12 lg:col-span-5">
                         <div className="sticky top-32">
                             <span className="text-[#7D2237] text-sm font-bold uppercase tracking-[0.2em] block mb-4">
@@ -72,7 +72,7 @@ const TilesDetails = async ({ params }) => {
                                 {shortDescription}
                             </p>
 
-                            {/* Technical Specifications Table */}
+                            {/* Ditailes */}
                             <div className="border-t border-b border-zinc-100 py-6 mb-8">
                                 <div className="grid grid-cols-2 gap-y-4 text-sm">
                                     <div className="text-zinc-400 uppercase tracking-wider">Material</div>
@@ -86,7 +86,7 @@ const TilesDetails = async ({ params }) => {
                                 </div>
                             </div>
 
-                            {/* Call to Actions (Gallery Focus) */}
+                            {/* Call to Actions  */}
                             <div className="flex flex-col gap-4">
                                 <button className="w-full bg-zinc-900 text-white py-5 px-8 font-bold uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-[#7D2237] transition-colors duration-500">
                                     <BiEnvelope className="text-xl" />
@@ -107,7 +107,7 @@ const TilesDetails = async ({ params }) => {
                     </div>
                 </div>
 
-                {/* Bottom Section - Detailed Description */}
+                {/* Description */}
                 <div className="mt-20 lg:mt-32 max-w-3xl">
                     <h3 className="text-2xl font-bold text-zinc-900 mb-6">Product Overview</h3>
                     <div className="prose prose-zinc lg:prose-lg text-zinc-600">
