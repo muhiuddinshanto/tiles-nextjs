@@ -6,11 +6,11 @@ const Hero = () => {
     <section className="max-w-[1280px] mx-auto px-6 sm:px-8 mb-16 lg:mb-32 pt-24 lg:pt-32">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         
-        {/* Image Side - Mobile এ নিচে যাবে, Desktop এ বামে থাকবে */}
+        
         <div className="order-2 lg:order-1 lg:col-span-7">
           <div className="relative aspect-square sm:aspect-[4/3] lg:aspect-[4/5] overflow-hidden rounded-2xl shadow-xl">
             <img 
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070" 
+              src="/images/heroImage.jpg" 
               alt="Architectural Precision" 
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Text Side - Mobile এ উপরে থাকবে, Desktop এ ডানে থাকবে */}
+        
         <div className="order-1 lg:order-2 lg:col-span-5 flex flex-col justify-center text-center lg:text-left">
           <div className="space-y-6 lg:space-y-8">
             <span className="text-[#7D2237] text-xs sm:text-sm font-bold uppercase tracking-[0.2em] block">
