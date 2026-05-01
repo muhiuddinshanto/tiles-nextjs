@@ -18,7 +18,7 @@ const AllTiles = async () => {
                 <h2 className="text-xl font-bold">AllTiles</h2>
             </div>
             
-            <div className="grid grid-cols-12  gap-4">
+            <div className="grid grid-cols-4  gap-4">
                 {
                     datas.map((product) => {
                         console.log(product);

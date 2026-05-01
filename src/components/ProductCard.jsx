@@ -1,29 +1,36 @@
-import { Button } from '@heroui/react';
 import Link from 'next/link';
-import { BiArrowFromLeft } from 'react-icons/bi';
+import { BiArrowToRight } from 'react-icons/bi';
 
 const ProductCard = ({ product }) => {
-    const {image, title, shortDescription} = product;
-    console.log(product);
-    
+    const { image, title, shortDescription, id } = product;
+
     return (
-        
-            <div className="col-span-12 md:col-span-6 lg:col-span-3 group border border-zinc-400 rounded-2xl overflow-hidden p-4">
-                <div className="aspect-square overflow-hidden mb-6 bg-zinc-100">
-                    <img
-                        src={image}
-                        alt={title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 "
-                    />
-                </div>
-                <h3 className="font-headline-md text-xl mb-2">{title}</h3>
-                <p className="font-body-md text-gray-500 mb-4">{shortDescription}</p>
-                <Link href={`/all-tiles/${product.id}`} className="font-label-lg text-primary flex items-center gap-2 hover:gap-3 transition-all">
-                    <button className='btn'>View Details <BiArrowFromLeft/></button>
-                    
+        <div className="group border border-zinc-200 rounded-2xl overflow-hidden p-4 hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+            {/* Image Container */}
+            <div className="aspect-square overflow-hidden rounded-xl mb-5 bg-zinc-100">
+                <img
+                    src={image}
+                    alt={title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+            </div>
+
+            {/* Content */}
+            <div className="flex flex-col flex-grow">
+                <h3 className="text-xl font-bold mb-2 text-zinc-800">{title}</h3>
+                <p className="text-sm text-gray-500 mb-6 line-clamp-2 flex-grow">
+                    {shortDescription}
+                </p>
+
+                {/* Action Button */}
+                <Link href={`/all-tiles/${id}`} className="w-full">
+                    <button className="btn btn-md w-full bg-[#7D2237] hover:bg-[#5a1827] text-white border-none flex items-center justify-center gap-2 group/btn">
+                        View Details 
+                        <BiArrowToRight className="text-xl group-hover/btn:translate-x-1 transition-transform" />
+                    </button>
                 </Link>
             </div>
-        
+        </div>
     );
 };
 

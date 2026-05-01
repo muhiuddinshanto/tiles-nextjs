@@ -23,7 +23,6 @@ export default async function Home() {
    <ProductShowcase/>
    <ProtfolioTiles/>
    <CTA/>
-   <UserModal/>
    </div>
    </>
   );
