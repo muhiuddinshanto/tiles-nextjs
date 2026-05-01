@@ -6,7 +6,7 @@ const AllTiles = async ({ searchParams }) => {
    
     const { query } = await searchParams;
 
-    const res = await fetch("https://pixgen-mu-nine.vercel.app/data.json", {
+    const res = await fetch("https://tiles-nextjs-brown.vercel.app/data.json", {
         cache: "no-store",
     });
     let datas = await res.json();

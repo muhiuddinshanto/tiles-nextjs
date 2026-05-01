@@ -3,7 +3,7 @@ import data from "@/../public/data.json";
 
 const ProductShowcase = async () => {
     
-    const res = await fetch('https://pixgen-mu-nine.vercel.app/data.json', { cache: 'no-store' });
+    const res = await fetch('https://tiles-nextjs-brown.vercel.app/data.json', { cache: 'no-store' });
     const data = await res.json();
 
     return (

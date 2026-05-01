@@ -1,36 +1,168 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧱 Tile Gallery — Modern Tile Showcase Platform
 
-## Getting Started
+A **modern, responsive, and full-stack tile showcase platform** built using **Next.js (App Router)**.
+This project demonstrates a complete production-ready structure with **authentication, protected routes, dynamic data fetching, search functionality, and clean UI design using DaisyUI**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🔗 Live Demo & Repository
+
+* 🌐 **Live Site:** https://tiles-nextjs-brown.vercel.app
+* 💻 **GitHub Repository:** https://github.com/muhiuddinshanto/tiles-nextjs
+
+---
+
+## ✨ Key Features
+
+* 🔐 **Authentication System**
+
+  * Email & Password login/signup
+  * Google Social Login
+  * Session-based authentication using Better Auth
+
+* 🔒 **Protected Routes**
+
+  * Middleware-based route protection
+  * Private pages like **Profile** & **All Tiles**
+
+* 🔎 **Smart Search System**
+
+  * Search tiles by **name** or **category**
+  * Dynamic filtering via URL query
+
+* 🧱 **Dynamic Tile Showcase**
+
+  * Server-side data fetching
+  * Individual product details page
+  * Real-time UI updates
+
+* ⚡ **Modern UI/UX**
+
+  * Fully responsive design
+  * Clean layouts with **Tailwind CSS + DaisyUI**
+  * Smooth animations & interactive elements
+
+* 🖼️ **Image Optimization**
+
+  * Next.js `<Image />` for optimized loading
+
+* 🎯 **Professional Sections**
+
+  * Hero Section
+  * Product Showcase
+  * Portfolio Tiles
+  * CTA Section
+  * Animated Marquee
+
+* 🚀 **Performance Optimized**
+
+  * Server Components
+  * No unnecessary client-side rendering
+  * Fast loading experience
+
+---
+
+## 🛠️ Main Technologies
+
+* Next.js (App Router)
+* React JS
+* Tailwind CSS
+* DaisyUI (UI Components)
+* Better Auth (Authentication)
+* MongoDB (Database)
+* React Icons
+* Next/Image Optimization
+* React Fast Marquee
+
+---
+
+## 📁 Project Structure
+
+```
+app/
+ ├── (auth)/
+ ├── all-tiles/
+ ├── my-profile/
+ ├── signin/
+ ├── signup/
+ ├── layout.js
+ ├── page.js
+
+components/
+ ├── Navbar.jsx
+ ├── Footer.jsx
+ ├── Hero.jsx
+ ├── ProductCard.jsx
+ ├── ProductShowcase.jsx
+ ├── PortfolioTiles.jsx
+ ├── CTA.jsx
+
+
+public/
+ ├── images/
+ ├── data.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ⚙️ Installation & Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Clone the repository
+git clone https://github.com/muhiuddinshanto/tiles-nextjs
 
-## Learn More
+# Go to project folder
+cd tiles-nextjs
 
-To learn more about Next.js, take a look at the following resources:
+# Install dependencies
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Run development server
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 Screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Add your project screenshots here for better presentation
+
+---
+
+## 🚀 Deployment
+
+This project is deployed on **Vercel**.
+You can easily deploy using:
+
+```bash
+vercel
+```
+
+---
+
+## 📌 Future Improvements
+
+* 🛒 Add Cart System
+* ❤️ Wishlist Feature
+* 📊 Admin Dashboard
+* 💬 Reviews & Ratings System
+* 🌙 Dark Mode Toggle
+
+---
+
+## 👨‍💻 Author
+
+**Muhiuddin Shanto**
+Frontend Developer | Next.js Enthusiast
+
+---
+
+## ⭐ Support
+
+If you like this project:
+
+* ⭐ Star the repository
+* 🍴 Fork it
+* 📢 Share with others
+

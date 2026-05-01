@@ -8,7 +8,7 @@ const TilesDetails = async ({ params }) => {
     const { id } = await params;
 
     
-    const res = await fetch("https://pixgen-mu-nine.vercel.app/data.json", { cache: 'no-store' });
+    const res = await fetch("https://tiles-nextjs-brown.vercel.app/data.json", { cache: 'no-store' });
     const datas = await res.json();
     const singleTile = datas.find((item) => item.id === id);
 
