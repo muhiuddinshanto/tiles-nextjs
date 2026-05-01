@@ -8,7 +8,7 @@ const Footer = () => {
           ARCHETYPE
         </div>
         
-        {/* LINKS - Mobile এ ২ কলাম বা ফ্লেক্স র‍্যাপ হবে */}
+        {/* Footer-Link */}
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 md:gap-10">
           <a href="#" className="text-zinc-500 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors font-display text-xs sm:text-sm uppercase tracking-widest">
             Privacy Policy
