@@ -1,5 +1,7 @@
 "use client"
 import { authClient } from '@/lib/auth-client';
+import { createAuthClient } from 'better-auth/react';
+import { BsGoogle } from 'react-icons/bs';
 
 const SignInPage = () => {
 
@@ -8,8 +10,8 @@ const SignInPage = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email,password);
-        
+        console.log(email, password);
+
 
 
         const { data, error } = await authClient.signIn.email({
@@ -25,6 +27,19 @@ const SignInPage = () => {
         }
 
     }
+    const authClient = createAuthClient();
+
+    const handleGoogleSignIn = async () => {
+        const { data, error } = await authClient.signIn.social({
+            provider: "google",
+            callbackURL: "/",
+        });
+        
+
+        if (error) {
+            alert(error.message);
+        }
+    };
 
 
     return (
@@ -51,8 +66,8 @@ const SignInPage = () => {
                         Login
                     </button>
 
-                    <button className="btn btn-ghost mt-1 w-full" type="reset">
-                        Reset
+                    <button onClick={handleGoogleSignIn } className="btn  mt-1 w-full" type="reset">
+                        <BsGoogle /> Sign in Google
                     </button>
 
                 </form>

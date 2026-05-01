@@ -11,6 +11,10 @@ const ProfilePage = () => {
 
    const [open, setOpen] = useState(false);
 
+   const handleSinguot = async () => {
+        await authClient.signOut();
+    }
+
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-base-200 px-4">
@@ -52,7 +56,7 @@ const ProfilePage = () => {
               
             </button>
 
-            <button className="px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 transition">
+            <button onClick={handleSinguot} className="px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-100 transition">
               Logout
             </button>
           </div>
