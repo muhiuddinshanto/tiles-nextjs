@@ -17,7 +17,7 @@ const Navbar = () => {
         <>
             <li><Link href="/">Home</Link></li>
             <li><Link href="/all-tiles">All Tiles</Link></li>
-            <li><Link href="/my-profile">Profile</Link></li>
+            <li><Link href="/profile">Profile</Link></li>
         </>
     );
 
