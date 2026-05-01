@@ -2,7 +2,7 @@ import ProductCard from "./ProductCard";
 
 const ProductShowcase = async () => {
     
-    const res = await fetch('http://localhost:3000/data.json', { cache: 'no-store' });
+    const res = await fetch('https://pixgen-mu-nine.vercel.app/data.json', { cache: 'no-store' });
     const data = await res.json();
 
     return (
