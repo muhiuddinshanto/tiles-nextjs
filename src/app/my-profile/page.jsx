@@ -4,6 +4,7 @@ import UserModal from "@/components/UserModal";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const ProfilePage = () => {
   const userData = authClient.useSession();
@@ -13,6 +14,7 @@ const ProfilePage = () => {
 
    const handleSinguot = async () => {
         await authClient.signOut();
+        toast.warning("signOut Succesfull!");
     }
 
 

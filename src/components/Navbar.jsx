@@ -3,6 +3,7 @@
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import Link from "next/link";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
     const userData = authClient.useSession();
@@ -10,6 +11,7 @@ const Navbar = () => {
 
     const handleSignout = async () => {
         await authClient.signOut();
+        toast.warning("signOut Succesfull!");
     };
 
     
