@@ -5,7 +5,7 @@ const Footer = () => {
         
         {/* LOGO */}
         <div className="text-xl font-bold text-zinc-900 dark:text-zinc-100 font-display tracking-tighter">
-          ARCHETYPE
+          TileGallery
         </div>
         
         {/* Footer-Link */}

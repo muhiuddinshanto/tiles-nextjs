@@ -25,9 +25,9 @@ const SignInPage = () => {
         });
 
         if (data) {
-            alert('SignIn Succesfull')
+            toast.success("Sign In Successful!")
         } else {
-            alert(error.message)
+           toast.error(error.message)
         }
 
     }
