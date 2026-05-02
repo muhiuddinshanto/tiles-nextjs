@@ -1,11 +1,11 @@
 "use client";
 import Link from 'next/link';
-import Image from 'next/image'; // Next.js Image ব্যবহার করা ভালো
+import Image from 'next/image'; 
 import { BiArrowToRight } from 'react-icons/bi';
 import { HiOutlineCube } from 'react-icons/hi';
 
 const ProductCard = ({ product }) => {
-    const { image, title, shortDescription, id, price, category, inStock, material } = product;
+    const { image, title, shortDescription, id, price, category, inStock, material, dimensions } = product;
 
     return (
         <div className="group bg-white border border-zinc-200 rounded-2xl overflow-hidden p-4 hover:shadow-2xl hover:border-[#7D2237]/20 transition-all duration-500 h-full flex flex-col relative">
@@ -19,10 +19,15 @@ const ProductCard = ({ product }) => {
 
             {/* Image Container */}
             <div className="aspect-square overflow-hidden rounded-xl mb-5 bg-zinc-100 relative">
-                <img
+                <Image
                     src={image}
                     alt={title}
-                    className={`w-full h-full object-cover transition-transform duration-700 ${inStock ? 'group-hover:scale-110' : 'grayscale'}`}
+                    fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    priority={false}
+                    className={`object-cover transition-transform duration-700 ${
+                        inStock ? 'group-hover:scale-110' : 'grayscale'
+                    }`}
                 />
                 
                 {/* Category Tag */}
@@ -42,7 +47,7 @@ const ProductCard = ({ product }) => {
 
                 <div className="flex items-center gap-1 text-zinc-400 text-xs mb-3">
                     <HiOutlineCube />
-                    <span>{material} • {product.dimensions}</span>
+                    <span>{material} • {dimensions}</span>
                 </div>
 
                 <p className="text-sm text-gray-500 mb-6 line-clamp-2 flex-grow leading-relaxed">
