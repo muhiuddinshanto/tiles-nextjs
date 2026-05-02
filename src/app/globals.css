@@ -30,3 +30,7 @@ body {
     width: 12px;
     border-radius: 5px;
 }
+
+.marquee-swiper .swiper-wrapper {
+  transition-timing-function: linear !important; /* স্লাইডারকে একটানা ঘোরার জন্য */
+}
