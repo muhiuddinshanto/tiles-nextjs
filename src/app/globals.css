@@ -8,3 +8,25 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.swiper-button-next, .swiper-button-prev {
+    color: #7D2237 !important; /* আপনার ব্র্যান্ড কালার */
+    background: white;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+
+.swiper-pagination-bullet-active {
+    background: #7D2237 !important;
+    width: 12px;
+    border-radius: 5px;
+}

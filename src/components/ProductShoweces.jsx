@@ -1,8 +1,6 @@
-import ProductCard from "./ProductCard";
-import data from "@/../public/data.json";
+import ProductSlider from "./ProductSlider"; // নতুন কম্পোনেন্ট ইম্পোর্ট
 
 const ProductShowcase = async () => {
-    
     const res = await fetch('https://tiles-nextjs-brown.vercel.app/data.json', { cache: 'no-store' });
     const data = await res.json();
 
@@ -19,14 +17,8 @@ const ProductShowcase = async () => {
                     </h2>
                 </div>
 
-                
-                <div className="grid grid-cols-12 gap-6 lg:gap-8">
-                    {data.slice(0, 4).map((product, index) => (
-                        <div key={index} className="col-span-12 md:col-span-6 lg:col-span-3">
-                            <ProductCard product={product} />
-                        </div>
-                    ))}
-                </div>
+                {/* এখানে গ্রিড ডিলিট করে স্লাইডার বসানো হয়েছে */}
+                <ProductSlider products={data.slice(0, 8)} /> 
             </div>
         </section>
     );
