@@ -33,7 +33,7 @@ const TilesDetails = async ({ params }) => {
         <section className="bg-white min-h-screen pt-20 lg:pt-32 pb-16">
             <div className="container mx-auto px-4 sm:px-8">
                 
-                {/* Back Link - মোবাইলে মার্জিন কমানো হয়েছে */}
+                {/* Back Link */}
                 <Link href="/all-tiles" className="inline-flex items-center gap-1 text-zinc-500 hover:text-[#7D2237] mb-6 lg:mb-10 transition-colors group">
                     <BiChevronLeft className="text-xl lg:text-2xl group-hover:-translate-x-1 transition-transform" />
                     <span className="text-[10px] lg:text-sm font-semibold uppercase tracking-widest">Back to Gallery</span>
@@ -41,9 +41,9 @@ const TilesDetails = async ({ params }) => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-20 items-start">
                     
-                    {/* LEFT - IMAGE */}
+                    {/* LEFT  */}
                     <div className="col-span-12 lg:col-span-7">
-                        {/* মোবাইলে aspect-square এর বদলে aspect-[4/3] দেওয়া যেতে পারে যদি ইমেজ বেশি লম্বা হয় */}
+                        
                         <div className="relative aspect-square sm:aspect-video lg:aspect-square bg-zinc-100 rounded-xl lg:rounded-2xl overflow-hidden border border-zinc-200">
                             <Image
                                 src={image}
@@ -52,16 +52,16 @@ const TilesDetails = async ({ params }) => {
                                 className="object-cover"
                                 priority
                             />
-                            {/* Badge - মোবাইলে সাইজ একটু ছোট */}
+                            {/* Badge */}
                             <div className={`absolute top-4 right-4 lg:top-6 lg:right-6 px-3 py-1 lg:px-4 lg:py-1 rounded-full text-[9px] lg:text-[10px] font-bold uppercase tracking-widest ${inStock ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'}`}>
                                 {inStock ? "Available" : "On Request"}
                             </div>
                         </div>
                     </div>
 
-                    {/* RIGHT - CONTENT */}
+                    {/* RIGHT */}
                     <div className="col-span-12 lg:col-span-5">
-                        {/* মোবাইলে sticky থাকবে না, শুধু বড় স্ক্রিনে থাকবে */}
+                       
                         <div className="lg:sticky lg:top-32">
                             <span className="text-[#7D2237] text-xs lg:text-sm font-bold uppercase tracking-[0.2em] block mb-3 lg:mb-4">
                                 {category} collection
@@ -89,7 +89,7 @@ const TilesDetails = async ({ params }) => {
                                 </div>
                             </div>
 
-                            {/* Call to Actions - মোবাইলে বাটনগুলো ফুল উইডথ */}
+                            {/* Call to Actions  */}
                             <div className="flex flex-col gap-3 lg:gap-4">
                                 <button className="w-full bg-zinc-900 text-white py-4 lg:py-5 px-8 font-bold uppercase tracking-widest text-xs lg:text-sm flex items-center justify-center gap-3 hover:bg-[#7D2237] transition-all duration-300 active:scale-[0.98]">
                                     <BiEnvelope className="text-lg lg:text-xl" />
@@ -110,7 +110,7 @@ const TilesDetails = async ({ params }) => {
                     </div>
                 </div>
 
-                {/* Description - মোবাইলে মার্জিন অ্যাডজাস্ট করা হয়েছে */}
+                {/* Description */}
                 <div className="mt-16 lg:mt-32 max-w-3xl">
                     <h3 className="text-xl lg:text-2xl font-bold text-zinc-900 mb-4 lg:mb-6 uppercase tracking-tight">Product Overview</h3>
                     <div className="prose prose-zinc lg:prose-lg text-zinc-600 max-w-none">

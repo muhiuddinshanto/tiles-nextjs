@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { BsGoogle } from 'react-icons/bs';
 import { FaEye } from 'react-icons/fa6';
 import { LuEyeClosed } from 'react-icons/lu';
+import { toast } from 'react-toastify';
 
 const SignInPage = () => {
 
@@ -40,7 +41,7 @@ const SignInPage = () => {
 
 
         if (error) {
-            alert(error.message);
+            toast.error(error.message)
         }
     };
 

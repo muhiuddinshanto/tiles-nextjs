@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { FaEye } from "react-icons/fa6";
 import { LuEyeClosed } from "react-icons/lu";
+import { toast } from "react-toastify";
 
 
 
@@ -33,11 +34,11 @@ const SignUpPage = () => {
         });
 
         if (data) {
-            alert('SignUp Succesfull')
+            toast.success("SignUp Succesfull!")
             router.push('/')
         }
         if (error) {
-            alert(error.message)
+            toast.error(error.message)
         }
 
 

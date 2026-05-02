@@ -7,6 +7,7 @@ import ProtfolioTiles from "@/components/ProtfolioTiles";
 
 
 
+
 export default async function Home() {
 
   
@@ -23,6 +24,7 @@ export default async function Home() {
    <ProtfolioTiles/>
    <CTA/>
    </div>
+ 
    </>
   );
 }
